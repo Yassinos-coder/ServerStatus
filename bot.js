@@ -162,7 +162,7 @@ exports.start = function(SETUP) {
             .setColor(0x2894C2)
             .setFooter(TICK_N % 2 === 0 ? '⚪ ALPHΛ-X-RP' : '⚫ ALPHΛ-X-RP')
             .setTimestamp(new Date())
-            .addField('\n\u200b\nComment pouvez-vous rejoindre le serveur ?', 'Vous pouvez rejoindre le serveur via [WebSite](alphagamingcommunity.000webhostapp.com) à saisir sur Direct Connect. En bas se trouve l\'état du serveur pour voir combien de personnes sont en ligne et qui sont dans la file d\'attente. Ce système est réalisé par [Douile](https://github.com/Douile/) et optimisé par [Yassinos](https://github.com/Yassinos-coder). \n\u200b\n', false)
+            .addField('\n\u200b\nComment pouvez-vous rejoindre le serveur ?', 'Vous pouvez rejoindre le serveur via **alphagamingcommunity.000webhostapp.com** à saisir sur Direct Connect. En bas se trouve l\'état du serveur pour voir combien de personnes sont en ligne et qui sont dans la file d\'attente. Ce système est réalisé par [Douile](https://github.com/Douile/) et optimisé par [Yassinos](https://github.com/Yassinos-coder). \n\u200b\n', false)
         if (STATUS !== undefined) {
             embed.addField(':warning: Actuele server status:', `${STATUS}\n\u200b\n`);
             embed.setColor(0xff5d00)
@@ -395,5 +395,3 @@ exports.start = function(SETUP) {
 
     return bot;
 }
-
-client.login(process.env.BOT_TOKEN)
