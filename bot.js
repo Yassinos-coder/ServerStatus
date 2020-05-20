@@ -396,4 +396,4 @@ exports.start = function(SETUP) {
     return bot;
 }
 
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN1)
